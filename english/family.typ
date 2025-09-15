@@ -7,7 +7,7 @@
 #show heading.where(level: 1): it => [
   #set text(size: 24pt, weight: "bold", fill: primary)
   #align(center)[#it.body]
-  #line(length: 100%, stroke: 2pt + primary)
+  #line(length: 100%, stroke: 3pt + primary)
   #v(0.5em)
 ]
 
@@ -16,7 +16,7 @@
   #v(0.8em)
   #it.body
   #v(-0.5em)
-  #line(length: 40%, stroke: 1.5pt + accent)
+  #line(length: 40%, stroke: 2pt + accent)
   #v(0.5em)
 ]
 
@@ -24,7 +24,9 @@
   #set text(size: 14pt, weight: "bold", fill: primary)
   #v(0.6em)
   #it.body
-  #v(-0.3em)
+  #v(-0.6em)
+  #line(length: 40%, stroke: 1pt + primary)
+  #v(0.3em)
 ]
 
 #let hlist(items) = {
